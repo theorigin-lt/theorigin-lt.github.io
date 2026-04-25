@@ -1,0 +1,1 @@
+// No global JavaScript needed for this layout.

@@ -1,5 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Page</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="global.css">
+  <style id="sections-styles">
+/* CSS for section section:Hero */
+#section-hero {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#section-hero .container {
+  width: 100%;
+  max-width: 1728px;
+  min-height: 837px;
+  padding: 44px 39px 47px 39px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+#section-hero .logo {
+  width: 100%;
+  max-width: 1649px;
+  height: auto;
+  display: block;
+}
+
+#section-hero .subtitle {
+  font-size: 72px;
+  font-weight: 400;
+  margin: 45px 0 0 0;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
+#section-hero .bottom-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: auto;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding-top: 60px;
+}
+
+#section-hero .contact-info {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  flex-wrap: wrap;
+  font-style: normal;
+}
+
+#section-hero .contact-item {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  font-size: 48px;
+  white-space: nowrap;
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.2s ease;
+}
+
+#section-hero .contact-item:hover {
+  opacity: 0.8;
+}
+
+#section-hero .contact-item img {
+  width: 99px;
+  height: 52px;
+  object-fit: contain;
+}
+
+#section-hero .services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#section-hero .service-item {
+  display: flex;
+  gap: 17px;
+  align-items: center;
+  font-size: 36px;
+  white-space: nowrap;
+}
+
+#section-hero .service-item img {
+  width: 21px;
+  height: 21px;
+  object-fit: contain;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1400px) {
+  #section-hero .subtitle { font-size: 5vw; }
+  #section-hero .contact-info { gap: 50px; }
+  #section-hero .contact-item { font-size: 3.5vw; }
+  #section-hero .contact-item img { width: 7vw; height: auto; }
+  #section-hero .service-item { font-size: 2.5vw; }
+}
+
+@media (max-width: 1200px) {
+  #section-hero .bottom-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #section-hero .subtitle { font-size: 48px; }
+  #section-hero .contact-item { font-size: 32px; }
+  #section-hero .contact-item img { width: 60px; }
+  #section-hero .service-item { font-size: 24px; }
+}
+
+@media (max-width: 1024px) {
+  #section-hero .container {
+    padding: 24px;
+    min-height: 100vh;
+  }
+  #section-hero .contact-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+  #section-hero .subtitle {
+    font-size: 36px;
+    margin-top: 32px;
+  }
+  #section-hero .contact-item { font-size: 24px; }
+  #section-hero .contact-item img { width: 48px; }
+  #section-hero .service-item { font-size: 20px; }
+  #section-hero .bottom-content { gap: 48px; }
+}
+  </style>
+  <script src="global.js" defer></script>
 </head>
 <body>
-<p>The origin of great things to come</p>
+<section id="section-hero">
+  <div class="container">
+    <img class="logo" src="images/11_217.svg" alt="The Origin Logo">
+    <h1 class="subtitle">Someday, this will be a creative portfolio website.</h1>
+    <div class="bottom-content">
+      <ul class="services-list">
+        <li class="service-item">
+          <img src="images/5_68.svg" alt="" aria-hidden="true">
+          <span>Product design</span>
+        </li>
+        <li class="service-item">
+          <img src="images/5_72.svg" alt="" aria-hidden="true">
+          <span>Design lectures</span>
+        </li>
+        <li class="service-item">
+          <img src="images/5_74.svg" alt="" aria-hidden="true">
+          <span>Creative management</span>
+        </li>
+      </ul>
+      <address class="contact-info">
+        <a href="mailto:info@theorigin.lt" class="contact-item">
+          <img src="images/5_60.svg" alt="" aria-hidden="true">
+          <span>info@theorigin.lt</span>
+        </a>
+        <a href="https://instagram.com/mildaajan" target="_blank" rel="noopener noreferrer" class="contact-item">
+          <img src="images/5_63.svg" alt="" aria-hidden="true">
+          <span>IG: @mildaajan</span>
+        </a>
+      </address>
+    </div>
+  </div>
+</section>
 </body>
+</html>

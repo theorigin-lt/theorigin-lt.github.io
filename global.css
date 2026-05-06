@@ -43,6 +43,15 @@ html {
     margin-bottom: 50px;
     line-height: 100%;
     letter-spacing: -6px;
+    @media (max-width: 1130px) {
+      letter-spacing: -4px;
+    }
+    @media (max-width: 900px) {
+      letter-spacing: -6px;
+    }
+    @media (max-width: 768px) {
+      letter-spacing: -4px;
+    }
   }
 
   .grid {

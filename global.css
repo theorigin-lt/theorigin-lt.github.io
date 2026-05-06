@@ -1,9 +1,131 @@
-body {
-  font-family: 'Inter', sans-serif;
+body,
+body * {
+  color: #6c25e8;
+  background-color: #0c0022;
   margin: 0;
   padding: 0;
-  background-color: #0c0022;
-  color: #6c25e8;
+  vertical-align: top;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  &.modal-is-open {
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+html {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+}
+
+.hero {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  padding: 44px 39px;
+  @media (max-width: 900px) {
+    padding: 40px 20px;
+  }
+  .logo-area {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+
+  .logo-text {
+    margin-top: 35px;
+    margin-bottom: 50px;
+    line-height: 100%;
+    letter-spacing: -7%;
+  }
+
+  .grid {
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* gap: 170px; */
+    /* align-items: end; */
+    /* justify-content: center; */
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: auto;
+    margin-bottom: 0;
+
+    @media (max-width: 900px) {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: auto;
+      margin-bottom: auto;
+      height: 100%;
+      justify-content: end;
+    }
+
+    .col {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      @media (max-width: 900px) {
+        &.services {
+          order: 1;
+          margin-top: 0;
+          margin-bottom: 50px;
+        }
+        &.email {
+          order: 2;
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+        &.ig {
+          order: 3;
+          margin-bottom: 40px;
+        }
+      }
+      &.vertical {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 11px;
+        .service {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 17px;
+          span {
+            font-size: 30px;
+            letter-spacing: -7%;
+          }
+        }
+      }
+      .arrow {
+        width: 99px;
+        @media (max-width: 1024px) {
+          width: 50px;
+        }
+        @media (max-width: 1024px) {
+          width: 63px;
+        }
+      }
+      .dot {
+        width: 21px;
+        @media (max-width: 1024px) {
+          width: 15px;
+        }
+        @media (max-width: 900px) {
+          width: 21px;
+        }
+      }
+      a {
+        text-decoration: none;
+        font-size: 30px;
+        letter-spacing: -7%;
+      }
+    }
+  }
 }
